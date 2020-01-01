@@ -7,11 +7,16 @@ class Util {
 
         switch (array.length) {
             case 1:
+            case 2:
                 return array.join('')
-            case 2: case 3:
+            case 3:
+            case 4:
                 array.splice(2, 0, separator)
                 return array.join('')
-            case 4: case 5: case 6: case 7: case 8:
+            case 5:
+            case 6:
+            case 7:
+            case 8:
                 array.splice(2, 0, separator)
                 array.splice(5, 0, separator)
                 return array.join('')
@@ -30,8 +35,11 @@ class Util {
 
         switch (array.length) {
             case 1:
+            case 2:
                 return array.join('')
-            case 2: case 3: case 4:
+
+            case 3: 
+            case 4:
                 array.splice(2, 0, separator)
                 return array.join('')
             case 5:

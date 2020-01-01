@@ -1,6 +1,6 @@
 {
   "name": "tihe-utils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Application to assist in software development with daily tasks such as time formatting, dates and the like.",
   "main": "index.js",
   "scripts": {
