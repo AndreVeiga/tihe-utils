@@ -22,7 +22,7 @@ class Util {
         }
     }
 
-    maskForHours(param, separator = ':') {
+    maskForHours(param, separator = ':', withSeconds = false) {
         let array = param
             .toString()
             .replace(separator, '')
@@ -35,7 +35,14 @@ class Util {
                 array.splice(2, 0, separator)
                 return array.join('')
             case 5:
-                return array[array.length - 1]
+            case 6:
+                return withSeconds ?
+                    (_ => {
+                        array.splice(2, 0, separator)
+                        array.splice(5, 0, separator)
+                        return array.join('')
+                    })()
+                    : array[array.length - 1]
             default:
                 return ''
         }
