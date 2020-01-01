@@ -23,7 +23,22 @@ class Util {
     }
 
     maskForHours(param, separator = ':') {
-        let array = param.replace(separator, '').split('')
+        let array = param
+            .toString()
+            .replace(separator, '')
+            .split('')
+
+        switch (array.length) {
+            case 1:
+                return array.join('')
+            case 2: case 3: case 4:
+                array.splice(2, 0, separator)
+                return array.join('')
+            case 5:
+                return array[array.length - 1]
+            default:
+                return ''
+        }
     }
 }
 
