@@ -1,0 +1,26 @@
+{
+  "name": "tihe-utils",
+  "version": "0.1.0",
+  "description": "Application to assist in software development with daily tasks such as time formatting, dates and the like.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndreVeiga/tihe-utils.git"
+  },
+  "keywords": [
+    "formatting",
+    "dates",
+    "time",
+    "utils"
+  ],
+  "author": "Andre Veiga",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AndreVeiga/tihe-utils/issues"
+  },
+  "homepage": "https://github.com/AndreVeiga/tihe-utils#readme",
+  "dependencies": {}
+}
