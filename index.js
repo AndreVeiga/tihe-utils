@@ -75,6 +75,29 @@ class Util {
             throw 'invalid date format'
         }
     }
+
+    isValidHours(param, separator = ':', isSeconds = false) {
+        try {
+            const min = 0
+            const maxH = 23
+            const max = 59
+            const array = param.split(separator ? separator : ':')
+            const hours = Number(array[0])
+            const minuts = Number(array[1])
+
+            if (isSeconds) {
+                const seconds = Number(array[2])
+                return (hours >= min && hours <= maxH)
+                    && (minuts >= min && minuts <= max)
+                    && (seconds >= min && seconds <= max)
+            }
+
+            return (hours >= min && hours <= maxH)
+                && (minuts >= min && minuts <= max)
+        } catch (e) {
+            throw 'invalid hours format'
+        }
+    }
 }
 
 module.exports = new Util
