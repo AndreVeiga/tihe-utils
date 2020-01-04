@@ -18,15 +18,18 @@
 
 ###  Using npm:
 
-~~~javascript
+```
+~~~global
   $ npm i -g tihe-utils
   $ npm install -g tihe-utils
 ~~~
 
-~~~html
+~~~local
   > $ npm i tihe-utils
   > $ npm install tihe-utils
 ~~~
+
+```
 
 ####  Note: add a flag --save if you are using npm < 5.0.0
 
