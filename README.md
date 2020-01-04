@@ -54,8 +54,6 @@
   * Time
   * Money
 
-#### Example
-
  Example with date
 ```
 const { _date } = require('tihe-utils')
