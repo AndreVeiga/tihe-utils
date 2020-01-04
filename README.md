@@ -16,13 +16,17 @@
 ###  Download and in a browser:
   > <script src="tihe.js"></script>
 
-###  Using npm (global):
-  > $ npm i -g tihe-utils
-  > $ npm install -g tihe-utils
-  
-###  Using npm (local):
+###  Using npm:
+
+~~~global
+  $ npm i -g tihe-utils
+  $ npm install -g tihe-utils
+~~~
+
+~~~local
   > $ npm i tihe-utils
   > $ npm install tihe-utils
+~~~
 
 ####  Note: add a flag --save if you are using npm < 5.0.0
 
