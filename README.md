@@ -56,11 +56,11 @@
 
  Example with date
 ```
-const { _date } = require('tihe-utils')
+const { date } = require('tihe-utils')
 
 const data = '30/02/2020'
 
-if( _date.isValidDate(data) ) {
+if( date.isValidDate(data) ) { // It's is false :)
     ....
 }
 ...
