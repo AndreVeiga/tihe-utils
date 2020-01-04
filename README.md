@@ -18,7 +18,7 @@
 
 ###  Using npm:
 
-```
+
 ~~~javascript
   $ npm i -g tihe-utils
   $ npm install -g tihe-utils
@@ -28,8 +28,6 @@
   > $ npm i tihe-utils
   > $ npm install tihe-utils
 ~~~
-
-```
 
 ####  Note: add a flag --save if you are using npm < 5.0.0
 
