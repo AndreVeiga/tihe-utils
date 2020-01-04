@@ -37,4 +37,4 @@
   // Time functions only
   > const { time } = require('tihe-utils')
   
-Developed by [André Veiga](https://about.me/eltonveiga) :br:
+Developed by [André Veiga](https://about.me/eltonveiga) 🇧🇷
