@@ -1,28 +1,44 @@
 const { date } = require('../tihe')
 
-const validateDate = function() {
-    const day = parseInt(Math.random() * 31)
-    let month = parseInt(Math.random() * 12)
-    month = month < 10 ? `${0}${month}`: month 
-    const year = parseInt(Math.random() * 20 + 2000)
-    
-    const fullDate = `${day}${month}${year}`
-    
-    let result = date.maskForDate(fullDate)
-    let expect = `${day}/${month}/${year}`
-    
+const maskDate = function () {
+    const fullDate = '01012020'
+    const result = date.maskForDate(fullDate)
+    const expect = '01/01/2020'
+
     try {
-        if(result != expect) {
+        if (result != expect) {
             throw new Error('wrong converted date')
-        } else {
-            console.log('date tests successfully completed :)')
         }
     } catch (error) {
         throw error.message
     }
 }
 
+const validateDate = function () {
+    let result = '01/01/2020'
+    let expect = true
+    try {
+        if(date.isValidDate(result) != expect){
+            throw new Error('invalid date')
+        }
+    } catch (error){
+        throw error.message
+    }
+
+    result = '31/02/2020'
+    expect = false
+
+    try {
+        if(date.isValidDate(result) != expect){
+            throw new Error('invalid date')
+        }
+    } catch (error){
+        throw error.message
+    }
+}
 
 module.exports = () => {
+    maskDate()
     validateDate()
+    console.log('date tests successfully completed :)')
 }
