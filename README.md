@@ -46,6 +46,26 @@
   // Time functions only
   const { time } = require('tihe-utils')
 ```
-  
-  
+
+## Features 
+ The implemented characteristics are the masks and validators
+ 
+  * Date
+  * Time
+  * Money
+
+###### Example
+
+ Example with date
+```
+const { _date } = require('tihe-utils')
+
+const data = '30/02/2020'
+
+if( _date.isValidDate(data) ) {
+    ....
+}
+...
+```
+
 Developed by [André Veiga](https://about.me/eltonveiga) 🇧🇷
