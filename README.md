@@ -19,12 +19,12 @@
 ###  Using npm:
 
 ```
-~~~global
+~~~javascript
   $ npm i -g tihe-utils
   $ npm install -g tihe-utils
 ~~~
 
-~~~local
+~~~html
   > $ npm i tihe-utils
   > $ npm install tihe-utils
 ~~~
