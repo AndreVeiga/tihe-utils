@@ -14,27 +14,38 @@
 ##  Installation
 
 ###  Download and in a browser:
-  > <script src="tihe.js"></script>
+```
+  <script src='tihe.js'></script>
+
+```
 
 ###  Using npm (global):
 
-  > $ npm i -g tihe-utils
+  > $ npm i -g tihe-utils  
+
   > $ npm install -g tihe-utils
   
 ###  Using npm (local):
 
-  > $ npm i tihe-utils
+  > $ npm i tihe-utils  
+
   > $ npm install tihe-utils
 
 ####  Note: add a flag --save if you are using npm < 5.0.0
 
 ###  Nodejs example:
+
+```
   // All functions core
   > const tihe = require('tihe-utils)
 
+```
+
   or
 
+```
   // Time functions only
   > const { time } = require('tihe-utils')
-  
+
+```
 Developed by [André Veiga](https://about.me/eltonveiga) 🇧🇷
