@@ -1,10 +1,11 @@
 {
   "name": "tihe-utils",
-  "version": "0.1.1",
+  "version": "0.2.1",
   "description": "Application to assist in software development with daily tasks such as time formatting, dates and the like.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node ./tests/index.test.js",
+    "prepublishOnly": "npm run test"
   },
   "repository": {
     "type": "git",
